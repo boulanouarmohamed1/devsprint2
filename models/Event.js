@@ -35,5 +35,4 @@ type: Number, // duration in hours or minutes (you decide)
 required: true
 }
 });
-
 module.exports = mongoose.model('Event', eventSchema);
