@@ -24,7 +24,7 @@ required: true
 status: {
 type: String,
 required: true,
-enum: ['Upcoming', 'Cancelled', 'completed'] // you can customize the statuses
+enum: ['Upcoming', 'Cancelled', 'Completed'] // you can customize the statuses
 },
 type: {
 type: String,
@@ -35,5 +35,4 @@ type: Number, // duration in hours or minutes (you decide)
 required: true
 }
 });
-
 module.exports = mongoose.model('Event', eventSchema);

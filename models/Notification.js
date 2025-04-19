@@ -8,5 +8,4 @@ const notificationSchema = new mongoose.Schema({
   status: { type: String, enum: ['read','unread'], default: 'unread' }, // Current status
   createdAt: { type: Date, default: Date.now }
 });
-
 module.exports = mongoose.model('Notification', notificationSchema);
