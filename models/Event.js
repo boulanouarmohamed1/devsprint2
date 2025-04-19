@@ -24,14 +24,14 @@ required: true
 status: {
 type: String,
 required: true,
-enum: ['Upcoming', 'Cancelled', 'completed'] // you can customize the statuses
+enum: ['Upcoming', 'Cancelled', 'Completed']
 },
 type: {
 type: String,
 required: true
 },
 duration: {
-type: Number, // duration in hours or minutes (you decide)
+type: Number, 
 required: true
 }
 });

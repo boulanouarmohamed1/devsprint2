@@ -37,7 +37,7 @@ const importEventsFromCSV = async (req, res) => {
                     }
                 }
 
-                const validStatuses = ['Upcoming', 'Cancelled', 'completed'];
+                const validStatuses = ['Upcoming', 'Cancelled', 'Completed'];
                 if (!validStatuses.includes(row.status)) {
                     throw new Error(`The status '${row.status}' is invalid. It must be one of: ${validStatuses.join(', ')}.`);
                 }
