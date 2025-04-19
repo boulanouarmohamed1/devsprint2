@@ -11,7 +11,6 @@ const requestSchema = new mongoose.Schema({
   qrCode: { type: String },
   createdAt: { type: Date, default: Date.now }
 });
-
 // 🔔 Auto-create a notification after a new request is saved
 requestSchema.post('save', async function (doc) {
   try {
@@ -34,9 +33,6 @@ requestSchema.post('save', async function (doc) {
     console.error('Error creating notification:', err);
   }
 });
-  status: { type: Boolean, default: false },  // true if accepted, false if rejected
-  treated: { type: Boolean, default: false }, // true if the admin has seen or treated the request
-  qrCode: { type: String }, // Store the  QR code string
-  createdAt: { type: Date, default: Date.now }
-});
+
+
 module.exports = mongoose.model('Request', requestSchema);

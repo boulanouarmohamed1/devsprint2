@@ -1,9 +1,6 @@
 const Request = require('../models/Request');
 const mongoose = require('mongoose');
 const User = require('../models/User');
-
-const mongoose = require('mongoose');
-const User = require('../models/User');
 const Event = require('../models/Event');
 const Notification = require('../models/Notification');
 
